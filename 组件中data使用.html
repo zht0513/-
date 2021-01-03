@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+
+<!--    <h3>{{username}}</h3>-->
+<!--</div>-->
+
+<!--<script src="js/vue.min.js"></script>-->
+<!--<script>-->
+<!--    let first = {-->
+<!--        tmeplate: `-->
+<!--        <div>-->
+<!--        这又是一个组件-->
+<!--        <br>-->
+<!--        <h3>这是组件中的data:{{username}}</h3>-->
+<!--        </div>`,-->
+<!--        data function () {-->
+<!--            return{-->
+<!--                username:'小黑',-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--    Vue.component('com',first)-->
+<!--    -->
+<!--    new Vue({-->
+<!--        el:'#app',-->
+<!--        data:{-->
+<!--            username:'xiaobai'-->
+<!--        },-->
+<!--    })-->
+<!--</script>-->
+
+
+
+<div id="app">
+
+    <h3>{{username}}</h3>
+</div>
+
+<script src="js/vue.min.js"></script>
+<script>
+    let first = {
+        tmeplate: `
+        <div>
+        这又是一个组件
+        <br>
+        <h3>这是组件中的data:{{username}}</h3>
+        </div>`,
+        data function () {
+            return{
+                username:'小黑',
+            }
+        }
+    }
+    Vue.component('com',first)
+
+    new Vue({
+        el:'#app',
+        data:{
+            username:'xiaobai'
+        },
+    })
+</script>
+</body>
+</html>

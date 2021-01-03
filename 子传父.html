@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    这是父组件中的username:{{username}}-->
+<!--    <hr>-->
+<!--    <com @btn="clickMe"></com>-->
+
+<!--</div>-->
+
+<!--<script src="js/vue.min.js"></script>-->
+<!--<script>-->
+<!--    let com = {-->
+<!--        template: `-->
+<!--          <div>-->
+<!--          这是子组件：-->
+<!--          <button @click="clickBtn">按钮</button>-->
+<!--          </div>`,-->
+<!--        methods: {-->
+<!--            clickBtn() {-->
+<!--                this.$emit('btn', this.name);-->
+<!--            },-->
+<!--        },-->
+<!--        data: function () {-->
+<!--            return {-->
+<!--                name: '百知教育',-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--    new Vue({-->
+<!--        el:'#app',-->
+<!--        data:{-->
+<!--            username:'小黑',-->
+<!--        },-->
+<!--        methods:{-->
+<!--            clickMe(username){-->
+<!--                this.username = username;-->
+<!--            },-->
+<!--        },-->
+<!--        components:{-->
+<!--            com:com,-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+
+
+
+
+<div id="app">
+    这是父组件中的username:{{username}}
+    <hr>
+    <com @btn="clickMe"></com>
+
+</div>
+
+<script src="js/vue.min.js"></script>
+<script>
+    let com = {
+        template: `
+          <div>
+          这是子组件：
+          <button @click="clickBtn">按钮</button>
+          </div>`,
+        methods: {
+            clickBtn() {
+                this.$emit('btn', this.name);
+            },
+        },
+        data: function () {
+            return {
+                name: '百知教育',
+            }
+        }
+    }
+
+    new Vue({
+        el:'#app',
+        data:{
+            username:'小黑',
+        },
+        methods:{
+            clickMe(username){
+                this.username = username;
+            },
+        },
+        components:{
+            com:com,
+        }
+    })
+</script>
+</body>
+</html>

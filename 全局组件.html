@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <com></com>-->
+<!--    <com></com>-->
+<!--    <com></com>-->
+<!--    <com></com>-->
+<!--</div>-->
+<!--<script src="js/vue.min.js"></script>-->
+<!--<script>-->
+<!--    let com = {-->
+<!--        tmeplate: `<div>这是我的第一个组件</div>`,-->
+<!--    }-->
+<!--    Vue.component('com',com)-->
+
+<!--    new Vue({-->
+<!--        el:'#app',-->
+<!--        data:{},-->
+<!--    })-->
+<!--</script>-->
+
+
+
+<div id="app">
+    <com></com>
+    <com></com>
+    <com></com>
+    <com></com>
+</div>
+<script src="js/vue.min.js"></script>
+<script>
+    let com = {
+        tmeplate: `<div>这是我的第一个组件</div>`,
+    }
+    Vue.component('com',com)
+
+    new Vue({
+        el:'#app',
+        data:{},
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <span id="span" @click="number">{{count}}</span>-->
+<!--</div>-->
+<!--<script src="js/vue.min.js"></script>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el:"#app",-->
+<!--        data:{-->
+<!--            count:40,-->
+<!--        },-->
+<!--        methods:{-->
+<!--            number(){-->
+<!--                this.count&#45;&#45;;-->
+<!--            },-->
+<!--        },-->
+<!--        beforeCreate: function () {-->
+<!--            console.log('beforeCreate: ' + this.count);-->
+<!--        },-->
+<!--        created: function () {-->
+<!--            console.log('created: ' + this.count);-->
+<!--        },-->
+<!--        beforeMount: function () {-->
+<!--            console.log('beforeMount:' + document.getElementById('spen').innerText);-->
+<!--        },-->
+<!--        mounted: function () {-->
+<!--            console.log('mounted: ' + document.getElementById('spen').innerText);-->
+<!--        },-->
+<!--        beforeUpdate: function () {-->
+<!--            console.log('beforeUpdate:' + this.count);-->
+<!--            console.log('beforeUpdate: ' + document.getElementById('span').innerText);-->
+<!--        },-->
+<!--        updated: function () {-->
+<!--            console.log('updated: ' + this.count);-->
+<!--            console.log('updated: ' + document.getElementById('span').innerText);-->
+<!--        },-->
+<!--        beforeDestroy: function () {-->
+
+<!--        },-->
+<!--        destroyed: function () {-->
+
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+
+
+
+<div id="app">
+    <span id="span" @click="number">{{count}}</span>
+</div>
+<script src="js/vue.min.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            count:40,
+        },
+        methods:{
+            number(){
+                this.count--;
+            },
+        },
+        beforeCreate: function () {
+            console.log('beforeCreate: ' + this.count);
+        },
+        created: function () {
+            console.log('created: ' + this.count);
+        },
+        beforeMount: function () {
+            console.log('beforeMount:' + document.getElementById('spen').innerText);
+        },
+        mounted: function () {
+            console.log('mounted: ' + document.getElementById('spen').innerText);
+        },
+        beforeUpdate: function () {
+            console.log('beforeUpdate:' + this.count);
+            console.log('beforeUpdate: ' + document.getElementById('span').innerText);
+        },
+        updated: function () {
+            console.log('updated: ' + this.count);
+            console.log('updated: ' + document.getElementById('span').innerText);
+        },
+        beforeDestroy: function () {
+
+        },
+        destroyed: function () {
+
+        }
+    })
+</script>
+</body>
+</html>

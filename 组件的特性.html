@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <second></second>-->
+<!--</div>-->
+<!--<script src="js/vue.min.js"></script>-->
+
+<!--<script>-->
+<!--    let second = {-->
+<!--        template:`-->
+<!--        <div>这是我的分页组件-->
+<!--        <div>我是嵌套的</div>-->
+<!--        <h3>{{count}}</h3>-->
+<!--        <button>@click="change"</button>-->
+<!--        <h3>{{title}}</h3>-->
+<!--</div>-->
+<!--        `,-->
+<!--        data: function () {-->
+<!--            return{-->
+<!--                count:50,-->
+<!--                title:'www',-->
+<!--            }-->
+<!--        },-->
+<!--        methods:{-->
+<!--            change(){-->
+<!--                this.count&#45;&#45;;-->
+<!--            },-->
+<!--        },-->
+<!--        created: function () {-->
+<!--            if (this.count >= 50){-->
+<!--                this.title = '中老年'-->
+<!--            }else{-->
+<!--                this.title = "青壮年";-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--    -->
+<!--    Vue.component('second',second)-->
+<!--    new Vue({-->
+<!--        el:'#app',-->
+<!--        data:{},-->
+<!--    })-->
+<!--</script>-->
+
+
+
+<div id="app">
+    <second></second>
+</div>
+<script src="js/vue.min.js"></script>
+
+<script>
+    let second = {
+        template:`
+        <div>这是我的分页组件
+        <div>我是嵌套的</div>
+        <h3>{{count}}</h3>
+        <button>@click="change"</button>
+        <h3>{{title}}</h3>
+</div>
+        `,
+        data: function () {
+            return{
+                count:50,
+                title:'www',
+            }
+        },
+        methods:{
+            change(){
+                this.count--;
+            },
+        },
+        created: function () {
+            if (this.count >= 50){
+                this.title = '中老年'
+            }else{
+                this.title = "青壮年";
+            }
+        }
+    }
+
+    Vue.component('second',second)
+    new Vue({
+        el:'#app',
+        data:{},
+    })
+</script>
+</body>
+</html>
